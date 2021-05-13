@@ -531,11 +531,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PersonalRepo\\ONEAI\\Portfolio\\Portfolio\\Portfolio.csproj",
+      "projectUniqueName": "C:\\PersonalRepo\\AITEAMPORTFOLIO\\Portfolio\\Portfolio\\Portfolio.csproj",
       "projectName": "Portfolio",
-      "projectPath": "C:\\PersonalRepo\\ONEAI\\Portfolio\\Portfolio\\Portfolio.csproj",
+      "projectPath": "C:\\PersonalRepo\\AITEAMPORTFOLIO\\Portfolio\\Portfolio\\Portfolio.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\PersonalRepo\\ONEAI\\Portfolio\\Portfolio\\obj\\",
+      "outputPath": "C:\\PersonalRepo\\AITEAMPORTFOLIO\\Portfolio\\Portfolio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
