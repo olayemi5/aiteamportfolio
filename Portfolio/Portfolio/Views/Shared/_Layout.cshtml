@@ -1,0 +1,13 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<body class="page-template-default page page-id-3872 theme-engitech woocommerce-no-js royal_preloader woocommerce-active elementor-default elementor-kit-2821 elementor-page elementor-page-3872 engitech-theme-ver-1.3 wordpress-version-5.7.1">
+    <div id="royal_preloader" data-width="175" data-height="50" data-url="http://stevenixon-001-site1.dtempurl.com/wp-content/themes/engitech/images/log.png" data-color="#0a0f2b" data-bgcolor="#fff"></div>
+    <div id="page" class="site">
+        @RenderBody()
+    </div>
+
+    @await Html.PartialAsync("_TemplateScriptsPartial")
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

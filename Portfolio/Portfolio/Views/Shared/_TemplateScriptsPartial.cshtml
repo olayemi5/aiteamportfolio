@@ -1,0 +1,55 @@
+﻿<a id="back-to-top" href="#" class="show"><i class="fa fa-arrow-up"> </i></a>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<script type='text/javascript' src='~/wp-includes/js/dist/vendor/wp-polyfill.min89b1.js?ver=7.4.4' id='wp-polyfill-js'></script>
+<script type='text/javascript' src='~/wp-includes/js/dist/hooks.minf521.js?ver=50e23bed88bcb9e6e14023e9961698c1' id='wp-hooks-js'></script>
+<script type='text/javascript' src='~/wp-includes/js/dist/i18n.min87d6.js?ver=db9a9a37da262883343e941c3731bc67' id='wp-i18n-js'></script>
+<script type='text/javascript' src='~/wp-includes/js/dist/vendor/lodash.minf492.js?ver=4.17.19' id='lodash-js'></script>
+<script type='text/javascript' src='~/wp-includes/js/dist/url.minacd8.js?ver=0ac7e0472c46121366e7ce07244be1ac' id='wp-url-js'></script>
+<script type='text/javascript' src='~/wp-includes/js/dist/api-fetch.minf3b9.js?ver=a783d1f442d2abefc7d6dbd156a44561' id='wp-api-fetch-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-after'>
+    wp.apiFetch.use(wp.apiFetch.createRootURLMiddleware("http://wpdemo.archiwp.com/engitech/wp-json/"));
+    wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware("8b070472e5");
+    wp.apiFetch.use(wp.apiFetch.nonceMiddleware);
+    wp.apiFetch.use(wp.apiFetch.mediaUploadMiddleware);
+    wp.apiFetch.nonceEndpoint = "//wpdemo.archiwp.com/engitech/wp-admin/admin-ajax.php?action=rest-nonce";
+</script>
+<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+    /* <![CDATA[ */
+    var wc_add_to_cart_params = { "ajax_url": "\/engitech\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/engitech\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "http:\/\/wpdemo.archiwp.com\/engitech\/cart\/", "is_cart": "", "cart_redirect_after_add": "no" };
+    /* ]]> */
+</script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+    /* <![CDATA[ */
+    var woocommerce_params = { "ajax_url": "\/engitech\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/engitech\/?wc-ajax=%%endpoint%%" };
+    /* ]]> */
+</script>
+<script type='text/javascript' id='wc-cart-fragments-js-extra'>
+    /* <![CDATA[ */
+    var wc_cart_fragments_params = { "ajax_url": "\/engitech\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/engitech\/?wc-ajax=%%endpoint%%", "cart_hash_key": "wc_cart_hash_c8d57f1cd4add6020c9933c2e3c64aa9", "fragment_name": "wc_fragments_c8d57f1cd4add6020c9933c2e3c64aa9", "request_timeout": "5000" };
+    /* ]]> */
+</script>
+<script type='text/javascript' id='elementor-frontend-js-before'>
+    var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false, "isImprovedAssetsLoading": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "version": "3.1.4", "is_static": false, "experimentalFeatures": [], "urls": { "assets": "http:\/\/wpdemo.archiwp.com\/engitech\/wp-content\/plugins\/elementor\/assets\/" }, "settings": { "page": [], "editorPreferences": [] }, "kit": { "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 3872, "title": "Home%209%20%E2%80%93%20Engitech", "excerpt": "", "featuredImage": false } };
+</script>
+<script>
+    window.lazyLoadOptions = { elements_selector: "img[data-lazy-src],.rocket-lazyload", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, callback_loaded: function (element) { if (element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible") { if (element.classList.contains("lazyloaded")) { if (typeof window.jQuery != "undefined") { if (jQuery.fn.fitVids) { jQuery(element).parent().fitVids() } } } } } }; window.addEventListener('LazyLoad::Initialized', function (e) {
+        var lazyLoadInstance = e.detail.instance; if (window.MutationObserver) {
+            var observer = new MutationObserver(function (mutations) {
+                var image_count = 0; var iframe_count = 0; var rocketlazy_count = 0; mutations.forEach(function (mutation) {
+                    for (i = 0; i < mutation.addedNodes.length; i++) {
+                        if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') { continue }
+                        if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') { continue }
+                        images = mutation.addedNodes[i].getElementsByTagName('img'); is_image = mutation.addedNodes[i].tagName == "IMG"; iframes = mutation.addedNodes[i].getElementsByTagName('iframe'); is_iframe = mutation.addedNodes[i].tagName == "IFRAME"; rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload'); image_count += images.length; iframe_count += iframes.length; rocketlazy_count += rocket_lazy.length; if (is_image) { image_count += 1 }
+                        if (is_iframe) { iframe_count += 1 }
+                    }
+                }); if (image_count > 0 || iframe_count > 0 || rocketlazy_count > 0) { lazyLoadInstance.update() }
+            }); var b = document.getElementsByTagName("body")[0]; var config = { childList: !0, subtree: !0 }; observer.observe(b, config)
+        }
+    }, !1)</script>
+<script data-no-minify="1" async src="~/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js"></script>
+<script src="~/wp-content/cache/min/4/800cb10875f9dd8b5f4e4f8cea49d680.js" data-minify="1" defer></script>
